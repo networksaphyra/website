@@ -49,6 +49,8 @@ html, body {
 
 @media (max-width: 768px) {
   .main-intro {
+    align-items: center;
+    text-align: center;
     padding: 5vw;
   }
   .main-intro h3 {
