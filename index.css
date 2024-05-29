@@ -12,6 +12,35 @@ body {
   line-height: 1.6;
 }
 
+nav {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(1px);
+  z-index: 2;
+}
+
+nav img {
+  width: 150px;
+  margin-top: -20px;
+}
+
+nav div {
+  display: flex;
+  padding: 20px;
+  justify-content: flex-end;
+}
+
+nav div a {
+  margin-left: 2rem;
+  color: #FAFAFA;
+  font-size: 1.1rem;
+}
+
 .hero {
   display: flex;
   justify-content: space-around;
@@ -113,7 +142,7 @@ body {
 
 .about-text button:hover {
   background-color: #e0b100;
-  box-shadow: 0 0 10px rgba(246, 193, 0, 0.5);
+  box-shadow: 0 0 20px rgba(246, 193, 0, 0.8);
 }
 
 .about-image {
