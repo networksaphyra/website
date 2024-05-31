@@ -12,10 +12,6 @@ body {
   line-height: 1.6;
 }
 
-main {
-  overflow: hidden;
-}
-
 nav {
   position: fixed;
   top: 0px;
@@ -34,14 +30,14 @@ nav img {
   margin-top: -20px;
 }
 
-nav div {
+.nav-links {
   display: flex;
   padding: 20px;
   justify-content: flex-end;
   align-items: center;
 }
 
-nav div a {
+.nav-links a {
   margin-left: 2rem;
   color: #FAFAFA;
   font-size: 1.2rem;
@@ -49,8 +45,17 @@ nav div a {
   transition: text-decoration 0.1s ease-in-out;
 }
 
-nav div a:hover {
+.nav-links a:hover {
   text-decoration: underline;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #FAFAFA;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .hero {
@@ -58,7 +63,7 @@ nav div a:hover {
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
-  padding: 3rem;
+  padding: 0rem 3rem;
 }
 
 .hero-content {
@@ -106,7 +111,7 @@ nav div a:hover {
 }
 
 .about {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .about h2 {
@@ -190,6 +195,46 @@ nav div a:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+.team {
+  padding: 15rem 5rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    img {
+      border-radius: 50%;
+      margin-right: 20px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .team-member-info {
+      max-width: 600px;
+      text-align: left;
+
+      h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1em;
+        color: #666;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -203,7 +248,35 @@ nav div a:hover {
     display: none;
     max-width: 300px;
   }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #090a0f;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
 }
+
 @keyframes rocketMovement {
   0% {
     transform: translateY(0) scaleX(-1);
