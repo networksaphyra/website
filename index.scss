@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@600&display=swap");
 
+$light-purple: #A1A1F1;
+$light-blue: #15C4FE;
+$dark-purple: #7D45FF;
+
 * {
   margin: 0;
   padding: 0;
@@ -50,8 +54,8 @@ nav img {
 }
 
 .nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #F6C100;
+  background-color: rgba(255, 255, 255, 0.866);
+  color: #3e3eea;
   transform: scale(1.1);
 }
 
@@ -65,15 +69,13 @@ nav img {
 }
 
 .contact-link {
-  background-color: #F6C100;
+  background-color: #3e3eea;
   color: #000;
   font-weight: 600;
-  // box-shadow: 0 0 10px rgba(246, 193, 0, 0.5);
-  // transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-link:hover {
-  background-color: #e0b100;
+  background-color:#A1A1F1;
   color: #000;
   box-shadow: 0 0 20px rgba(246, 193, 0, 0.0);
 }
@@ -97,7 +99,8 @@ nav img {
 }
 
 .hero h1 span {
-  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  // background: $dark-purple;
+  background: linear-gradient(-90deg, $light-blue 20%, $light-purple 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -108,7 +111,7 @@ nav img {
 }
 
 .hero button {
-  background-color: #F6C100;
+  background-color: #A1A1F1;
   color: #000;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -116,13 +119,13 @@ nav img {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 0 20px rgba(246, 193, 0, 0.5);
+  box-shadow: 0 0 20px rgba(161, 161, 241, 0.5);
   transition: all 0.3s ease;
 }
 
 .hero button:hover {
-  background-color: #e0b100;
-  box-shadow: 0 0 30px rgba(246, 193, 0, 0.8);
+  background-color: #5959ec;
+  box-shadow: 0 0 30px rgba(143, 210, 255, 0.8);
 }
 
 .hero img {
@@ -136,10 +139,10 @@ nav img {
 
 .about h2 {
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 2rem;
-  color: #F6C100;
+  color: #A1A1F1;
 }
 
 .about-content {
@@ -167,10 +170,10 @@ nav img {
 }
 
 .about-text button {
-  background-color: #F6C100;
+  background-color: #A1A1F1;
   color: #000;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: 200;
   padding: 0.8rem 1.6rem;
   border: none;
   border-radius: 5px;
@@ -179,8 +182,8 @@ nav img {
 }
 
 .about-text button:hover {
-  background-color: #e0b100;
-  box-shadow: 0 0 20px rgba(246, 193, 0, 0.8);
+  background-color: #5959ec;
+  box-shadow: 0 0 20px rgba(143, 210, 255, 0.8);
 }
 
 .about-image {
@@ -224,14 +227,14 @@ nav img {
 .team h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  font-weight: 300;
-  color: #F6C100;
+  font-weight: 400;
+  color: #A1A1F1;
 }
 
 .team-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 2rem;
 }
 
