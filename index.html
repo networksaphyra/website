@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  <title>Website</title>
+  <title>Project Asterisk</title>
 </head>
 <body>
   <div id="stars"></div>
@@ -15,12 +16,12 @@
   <div id="stars3"></div>
   
   <nav>
-    <a href="https://www.google.com"><img src="assets/logo.png" /></a>
+    <a href="https://www.google.com"><img src="assets/logo.png" alt="Logo"></a>
     <div class="nav-links">
-      <a href="https://www.google.com">Home</a>
-      <a href="https://www.google.com">About</a>
-      <a href="https://www.google.com">Team</a>
-      <a href="https://www.google.com">Contact</a>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#contact" class="contact-link">Contact</a>
     </div>
     <button class="nav-toggle" aria-label="Toggle navigation">
       &#9776;
@@ -28,7 +29,7 @@
   </nav>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero-content">
         <h1>Helping High School Students <span>Takeoff.</span></h1>
         <p>Something to describe this project, haven't gotten it yet.</p>
@@ -36,7 +37,8 @@
       </div>
       <img src="assets/rocket4.png" alt="Rocket">
     </section>
-    <section class="about">
+
+    <section class="about" id="about">
       <h2>About Us</h2>
       <div class="about-content">
         <div class="about-text">
@@ -49,33 +51,67 @@
         </div>
       </div>
       <div class="image-carousel">
-        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
-        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
-        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image 1">
+        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image 2">
+        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image 3">
       </div>
     </section>
-    <section class="team">
+
+    <section class="team" id="team">
       <h2>Meet the Team</h2>
-      <div class="team-member">
-        <img src="https://via.placeholder.com/150" alt="Team Member Image">
-        <div class="team-member-info">
-          <h3>Aabjosh Singh</h3>
-          <p>"Some inspiring words by this goofy mf"</p>
+      <div class="team-row">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Abbas Syed">
+          <div class="team-member-info">
+            <h3>Abbas Syed</h3>
+            <p>Co-Chair</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Aabjosh Singh">
+          <div class="team-member-info">
+            <h3>Aabjosh Singh</h3>
+            <p>Co-Chair</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Hamza Ammar">
+          <div class="team-member-info">
+            <h3>Hamza Ammar</h3>
+            <p>Director of Outreach</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Josh Wu">
+          <div class="team-member-info">
+            <h3>Josh Wu</h3>
+            <p>Director of Operations</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Annahad Kaur">
+          <div class="team-member-info">
+            <h3>Annahad Kaur</h3>
+            <p>Director of Finance</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Marcus Prgin">
+          <div class="team-member-info">
+            <h3>Marcus Prgin</h3>
+            <p>Director of Events</p>
+          </div>
         </div>
       </div>
-      <div class="team-member">
-        <img src="https://via.placeholder.com/150" alt="Team Member Image">
-        <div class="team-member-info">
-          <h3>Some other goofy dude</h3>
-          <p>"Some more goofy inspiring words from this mofo too"</p>
-        </div>
-      </div>
+    </section>
+
+    <section class="contact-us" id="contact-us">
+
     </section>
   </main>
-  <footer class="footer">
-    <!-- Footer content here -->
-  </footer>
 
-  <script></script>
+  <footer></footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
