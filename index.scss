@@ -3,6 +3,7 @@
 $light-purple: #A1A1F1;
 $light-blue: #15C4FE;
 $dark-purple: #7D45FF;
+$nav-background: #000000;
 
 * {
   margin: 0;
@@ -25,12 +26,15 @@ nav {
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  background-color: $nav-background;
+  backdrop-filter: blur(10px);
+  opacity: 0.8;
   z-index: 2;
 }
 
 nav img {
-  width: 125px;
-  margin-top: -20px;
+  width: 300px;
+  margin-left: -10px;
 }
 
 .nav-links {
@@ -206,8 +210,8 @@ nav img {
 }
 
 .image-carousel img {
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -217,6 +221,39 @@ nav img {
 .image-carousel img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.our-vision {
+  padding: 4rem 2rem;
+  text-align: left;
+  color: #ffffff;
+}
+
+.our-vision h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  color: #A1A1F1;
+  text-align: center;
+}
+
+.our-vision p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.our-vision ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.our-vision ul li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
 .team {
@@ -234,37 +271,36 @@ nav img {
 .team-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
 
 .team-member {
-  flex: 1 1 33%;
-  flex-direction: row;
-  gap: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 1rem;
+  text-align: center;
+  flex-basis: 40%;
+  margin-bottom: 2rem;
 }
 
 .team-member img {
   border-radius: 50%;
-  margin-right: 20px;
+  margin-bottom: 1rem;
   width: 150px;
   height: 150px;
   object-fit: cover;
 }
 
 .team-member-info {
-  max-width: 400px;
   text-align: center;
 }
 
 .team-member-info h3 {
   font-size: 1.5rem;
   font-weight: 100;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .team-member-info p {
@@ -409,6 +445,7 @@ $shadows-big: multiple-box-shadow(100);
   background: transparent;
   box-shadow: $shadows-small;
   animation: animStar 50s linear infinite;
+  z-index: -10;
 }
 
 #stars:after {
@@ -427,6 +464,7 @@ $shadows-big: multiple-box-shadow(100);
   background: transparent;
   box-shadow: $shadows-medium;
   animation: animStar 100s linear infinite;
+  z-index: -10;
 }
 
 #stars2:after {
@@ -445,6 +483,7 @@ $shadows-big: multiple-box-shadow(100);
   background: transparent;
   box-shadow: $shadows-big;
   animation: animStar 150s linear infinite;
+  z-index: -10;
 }
 
 #stars3:after {
